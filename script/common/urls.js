@@ -85,8 +85,8 @@ var urls = {
             before();
         }
         params.timeStamp = new Date().getTime();
-        params.ak = Commonfun.getQueryString('ak') || 'QSUeXF3ruc3pmF6aGvj2mdtXnvGrUWDC';
-        params.service_id = Commonfun.getQueryString('service_id') || '138202';
+        params.ak = Commonfun.getQueryString('ak')
+        params.service_id = Commonfun.getQueryString('service_id')
         url = url + '?';
         for (let i in params) {
             url = url + i + '=' + params[i] + '&';
